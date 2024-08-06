@@ -3,10 +3,8 @@ package com.example.appplanet.ui.main
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.appplanet.PlanetData
 import com.example.appplanet.R
 
 class PlanetsAdapter: RecyclerView.Adapter<PlanetsAdapter.ViewHolder>() {
