@@ -9,5 +9,18 @@
         android:id="@+id/mainFragment"
         android:name="com.example.appplanet.ui.main.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_planetDetailsFragment"
+            app:destination="@id/planetDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/planetDetailsFragment"
+        android:name="com.example.appplanet.ui.main.PlanetDetailsFragment"
+        android:label="fragment_planet_details"
+        tools:layout="@layout/fragment_planet_details" >
+        <argument
+            android:name="planetid"
+            app:argType="integer" />
+    </fragment>
 </navigation>
